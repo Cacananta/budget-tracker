@@ -1,6 +1,6 @@
 # React/Redux Budget Tracker
 
-A bare bones react starter set of files
+This lightweight tracker can help give you a high level overview of your money inflows and outflows. Data entered will not persist.
 
 ## Setup
 

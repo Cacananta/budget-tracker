@@ -24852,7 +24852,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
 // We'll need to import all those action creators.
 
 
@@ -24863,7 +24862,7 @@ var ExpenseEntries = function (_React$Component) {
     _classCallCheck(this, ExpenseEntries);
 
     // Here we're binding these methods to the context
-    // of the components. This only has to be done,
+    // of the components. This only has to be done
     // because these methods are called back by
     // event emitters (which lose context).
     var _this = _possibleConstructorReturn(this, (ExpenseEntries.__proto__ || Object.getPrototypeOf(ExpenseEntries)).call(this, props));
@@ -24879,6 +24878,8 @@ var ExpenseEntries = function (_React$Component) {
     value: function handleDescriptionInput(event) {
       // dispatch was provided by connect()
       var dispatch = this.props.dispatch;
+      // const dispatch = this.props.dispatch;
+
       var value = event.target.value;
 
       dispatch((0, _expenseActions.updateExpenseDescription)(value));
